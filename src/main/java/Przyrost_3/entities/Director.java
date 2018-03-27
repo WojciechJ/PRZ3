@@ -14,8 +14,8 @@ public class Director {
     @Column(name = "Id")
     private int id;
 
-    @Column(name = "first_name")
-    private String firstName;
+    @Column(name = "name")
+    private String name;
 
     @Column(name = "last_name")
     private String lastName;
@@ -34,10 +34,10 @@ public class Director {
     }
 
     public String getFirstName() {
-        return firstName;
+        return name;
     }
-    public void setFirstName( String first_name ) {
-        this.firstName = first_name;
+    public void setFirstName( String name ) {
+        this.name = name;
     }
 
     public String getLastName() {

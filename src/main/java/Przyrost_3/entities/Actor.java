@@ -8,11 +8,11 @@ import java.time.ZonedDateTime;
 public class Actor {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id")
+    @Column(name = "id")
     private int id;
 
-    @Column(name = "first_name")
-    private String firstName;
+    @Column(name = "name")
+    private String name;
 
     @Column(name = "last_name")
     private String lastName;
@@ -28,11 +28,11 @@ public class Actor {
     }
     public void setId( int id ) { this.id = id; }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
-    public void setFirstName( String first_name ) {
-        this.firstName = first_name;
+    public void setFirstName( String name ) {
+        this.name = name;
     }
 
     public String getLastName() {
